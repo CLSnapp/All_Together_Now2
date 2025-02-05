@@ -1,1 +1,1 @@
-# All_Together_Now2
+All Together Now Front-end by Cory Snapp, Rebecca Blanchard, Amy Benner
