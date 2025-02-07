@@ -1,6 +1,6 @@
 import { useState } from "react";
 import "./App.css";
-import Registration from "./components/Registration";
+import Registration from "../components/Register/Registration";
 
 function App() {
   const [token, setToken] = useState(null);
