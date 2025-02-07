@@ -6,7 +6,7 @@ export const ProtectedRoute = () => {
   
 
   if (!token) {
-    return <Navigate to="/" />;
+    return <Navigate to="/home" />;
   }
 
   return <Outlet />;

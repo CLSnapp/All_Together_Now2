@@ -4,6 +4,7 @@ import Registration from "../components/Register/Registration";
 import { Route, Routes } from "react-router-dom";
 import Home from "../components/Home";
 import { ProtectedRoute } from "../components/ProtectedRoute";
+import Login from "../components/Login/Login";
 
 function App() {
   const [token, setToken] = useState(null);
@@ -17,6 +18,10 @@ function App() {
         <Route
           path="/register"
           element={<Registration token={token} setToken={setToken} />}
+        ></Route>
+        <Route
+          path="/login"
+          element={<Login token={token} setToken={setToken} />}
         ></Route>
       </Routes>
     </>

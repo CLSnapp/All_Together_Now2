@@ -17,6 +17,7 @@ export default function Register() {
       ...prev,
       [e.target.name]: e.target.value,
     }));
+    setError(null);
   };
 
   const submit = async (e) => {
@@ -40,7 +41,7 @@ export default function Register() {
           <tbody>
             <tr>
               <td width="150px">
-                <label>First name: </label>
+                <label>First Name: </label>
               </td>
               <td>
                 <input
@@ -53,7 +54,7 @@ export default function Register() {
             </tr>
             <tr>
               <td width="150px">
-                <label>Last name: </label>
+                <label>Last Name: </label>
               </td>
               <td>
                 <input
@@ -66,7 +67,7 @@ export default function Register() {
             </tr>
             <tr>
               <td width="150px">
-                <label>Email address: </label>
+                <label>Email Address: </label>
               </td>
               <td>
                 <input
