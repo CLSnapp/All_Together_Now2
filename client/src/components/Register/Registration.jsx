@@ -46,7 +46,7 @@ export default function Register() {
                 <input
                   className="inputfield"
                   type="text"
-                  name="firstname"
+                  name="firstName"
                   onChange={change}
                 />
               </td>
@@ -59,7 +59,7 @@ export default function Register() {
                 <input
                   className="inputfield"
                   type="text"
-                  name="lastname"
+                  name="lastName"
                   onChange={change}
                 />
               </td>

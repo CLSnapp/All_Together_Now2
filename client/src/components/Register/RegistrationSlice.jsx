@@ -6,6 +6,7 @@ const registerApi = api.injectEndpoints({
     register: builder.mutation({
       query: ({ firstName, lastName, email, password }) => ({
         url: "/auth/register",
+        mode: "cors",
         method: "POST",
         body: {
           firstName,
