@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
-import { useRegisterMutation } from "./RegisterSlice";
+import { useRegisterMutation } from "./RegistrationSlice";
 
 export default function Register() {
   const [form, setForm] = useState({
@@ -26,8 +26,8 @@ export default function Register() {
       console.log(response);
       navigate("/home");
     } catch (error) {
-      setError(error.data.message);
-      console.error(error.data.message);
+      setError(error.data);
+      console.error(error.data);
     }
   };
 
