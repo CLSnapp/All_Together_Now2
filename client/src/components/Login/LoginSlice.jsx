@@ -22,6 +22,7 @@ const storeToken = (state, { payload }) => {
   window.sessionStorage.setItem("token", payload.token);
 };
 
+
 const loginSlice = createSlice({
   name: "login",
   initialState: {},

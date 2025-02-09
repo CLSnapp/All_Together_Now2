@@ -2,7 +2,7 @@ import { useState } from "react";
 import "./App.css";
 import Registration from "../components/Register/Registration";
 import { Route, Routes } from "react-router-dom";
-import Home from "../components/Home";
+import Home from "../components/Home/Home";
 import { ProtectedRoute } from "../components/ProtectedRoute";
 import Login from "../components/Login/Login";
 
@@ -13,7 +13,10 @@ function App() {
     <>
       <Routes>
         <Route path="/home" element={<ProtectedRoute />}>
-          <Route path="/home" element={<Home />} />
+          <Route
+            path="/home"
+            element={<Home />}
+          />
         </Route>
         <Route
           path="/register"

@@ -14,7 +14,7 @@ export default function Login({ setToken }) {
     e.preventDefault();
     try {
       const result = await loginUser({ email, password }).unwrap();
-      console.log(result);
+      console.log("This is the loginUser result", result);
       if (result.error) {
         console.error(error);
         setError(error);
